@@ -1,6 +1,6 @@
 {
   "name": "stackgl-readme-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reusable CSS for styling README/Markdown content consistently",
   "main": "index.js",
   "license": "MIT",
@@ -13,7 +13,9 @@
     "url": "http://hughsk.io/"
   },
   "browserify": {
-    "transform": ["brfs"]
+    "transform": [
+      "brfs"
+    ]
   },
   "dependencies": {
     "brfs": "^1.2.0"
