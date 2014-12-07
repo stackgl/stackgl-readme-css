@@ -12,8 +12,17 @@
     "email": "hughskennedy@gmail.com",
     "url": "http://hughsk.io/"
   },
-  "dependencies": {},
-  "devDependencies": {},
+  "browserify": {
+    "transform": ["brfs"]
+  },
+  "dependencies": {
+    "brfs": "^1.2.0"
+  },
+  "devDependencies": {
+    "cheerio": "^0.18.0",
+    "marked": "^0.3.2",
+    "pygmentize-bundled": "^2.3.0"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/stackgl/stackgl-readme-css.git"
