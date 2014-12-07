@@ -1,0 +1,33 @@
+{
+  "name": "stackgl-readme-css",
+  "version": "1.0.0",
+  "description": "Reusable CSS for styling README/Markdown content consistently",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "node example"
+  },
+  "author": {
+    "name": "Hugh Kennedy",
+    "email": "hughskennedy@gmail.com",
+    "url": "http://hughsk.io/"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stackgl/stackgl-readme-css.git"
+  },
+  "keywords": [
+    "stackgl",
+    "css",
+    "readme",
+    "markdown",
+    "format",
+    "style"
+  ],
+  "homepage": "https://github.com/stackgl/stackgl-readme-css",
+  "bugs": {
+    "url": "https://github.com/stackgl/stackgl-readme-css/issues"
+  }
+}

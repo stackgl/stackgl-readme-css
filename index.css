@@ -1,0 +1,231 @@
+.stackgl-readme {
+  color: #5B6173;
+  font-weight: 100;
+}
+
+/**
+ * Typography
+ */
+.stackgl-readme,
+.stackgl-readme pre,
+.stackgl-readme code {
+  font-family: 'Fantasque Sans Mono', 'Ubuntu Mono', 'Inconsolata', monospace;
+}
+
+.stackgl-readme ::selection {
+  background: #DEE7FF;
+}
+.stackgl-readme ::-moz-selection {
+  background: #DEE7FF;
+}
+
+/**
+ * Headers
+ */
+.stackgl-readme h1,
+.stackgl-readme h2,
+.stackgl-readme h3,
+.stackgl-readme h4,
+.stackgl-readme h5,
+.stackgl-readme h6 {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  line-height: 1.2em;
+  color: #34363B;
+  position: relative;
+}
+
+.stackgl-readme > h1:first-child,
+.stackgl-readme > hr + h1:not(:first-child) {
+  font-size: 2.5rem;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.stackgl-readme > h1:not(:first-child),
+.stackgl-readme > h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+  border-bottom: 1px dotted #DEE7FF;
+  padding-bottom: 0.4em;
+}
+
+.stackgl-readme h3 {
+  font-weight: 300;
+  margin-top: 2em;
+  color: #4A4F5E;
+}
+
+.stackgl-readme h2 + h3 {
+  margin-top: 0;
+}
+
+.stackgl-readme h1 code,
+.stackgl-readme h2 code,
+.stackgl-readme h3 code,
+.stackgl-readme h4 code,
+.stackgl-readme h5 code,
+.stackgl-readme h6 code {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.stackgl-readme h1 img,
+.stackgl-readme h2 img,
+.stackgl-readme h3 img,
+.stackgl-readme h4 img,
+.stackgl-readme h5 img,
+.stackgl-readme h6 img {
+  display: none;
+}
+
+/**
+ * Paragraphs
+ */
+.stackgl-readme p,
+.stackgl-readme > ul,
+.stackgl-readme > ol {
+  font-size: 0.9rem;
+  line-height: 1.55em;
+}
+
+/**
+ * Links
+ */
+.stackgl-readme a {
+  color: #66C4FF;
+  text-decoration: none;
+  text-shadow: 1px 0 #fff, -1px 0 #fff;
+  background: linear-gradient(to bottom, transparent 0%, #66C4FF 1%) repeat-x;
+  padding-bottom: 0px;
+  margin-bottom: -0px;
+  background-size: 1px 1px;
+  background-position: left bottom;
+}
+
+.stackgl-readme a::selection {
+  background: #DEE7FF;
+  text-shadow: 1px 0 rgba(0,0,0,0);
+}
+.stackgl-readme a::-moz-selection {
+  background: #DEE7FF;
+  text-shadow: 1px 0 rgba(0,0,0,0);
+}
+
+/**
+ * Horizontal Rules
+ */
+.stackgl-readme hr {
+  width: 8px; height: 8px;
+  background: transparent;
+  border: 1px solid #A9B0C2;
+  border-radius: 17px;
+  margin: 4rem auto;
+  position: relative;
+}
+
+.stackgl-readme hr:before,
+.stackgl-readme hr:after {
+  position: absolute;
+  top: 1px;
+  left: -24px;
+  width: 4px; height: 4px;
+  background: transparent;
+  content: '';
+  border-radius: 9px;
+  border: 1px solid #A9B0C2;
+}
+
+.stackgl-readme hr:after {
+  left: auto;
+  right: -24px;
+}
+
+/**
+ * Images
+ */
+.stackgl-readme img {
+  max-width: 100%;
+  display: block;
+}
+.stackgl-readme a img {
+  /*border-bottom: 1px solid #f00;*/
+}
+
+/**
+ * Lists
+ */
+.stackgl-readme li {
+  margin-bottom: 0.2em;
+}
+
+.stackgl-readme ul,
+.stackgl-readme ol {
+  margin: 1rem;
+  padding-left: 2rem;
+}
+.stackgl-readme ul ul,
+.stackgl-readme ul ol,
+.stackgl-readme ol ol,
+.stackgl-readme ol ul {
+  margin: 0;
+}
+/**
+ * Code/Syntax Highlighting
+ */
+.stackgl-readme > pre {
+  background: #383C47;
+  color: #fff;
+  border-radius: 2px;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+  line-height: 1.2em;
+  overflow-x: auto;
+}
+
+.stackgl-readme code {
+  background: #F6F8FE;
+  padding: 0.125em 0.35em;
+}
+
+.stackgl-readme > pre code,
+.stackgl-readme > pre pre {
+  background: transparent;
+  overflow: visible;
+  padding: 0;
+}
+
+.stackgl-readme .k,
+.stackgl-readme .kd,
+.stackgl-readme .kr,
+.stackgl-readme .s1 { color: #FFE169; }
+.stackgl-readme .mf,
+.stackgl-readme .mi { color: #66C4FF; }
+.stackgl-readme .cm,
+.stackgl-readme .cp,
+.stackgl-readme .c1 { color: #A9B0C2; }
+.stackgl-readme .o,
+.stackgl-readme .p { color: #DEE7FF; }
+
+.stackgl-readme .lang-glsl .k,
+.stackgl-readme .lang-glsl .kd,
+.stackgl-readme .lang-glsl .s1 { color: #61FF90; }
+.stackgl-readme .lang-glsl .mf,
+.stackgl-readme .lang-glsl .mi { color: #FF6F5C; }
+
+.stackgl-readme ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.stackgl-readme ::-webkit-scrollbar-thumb {
+  background: #5B6173;
+  transition: background 0.2s;
+  -webkit-transition: background 0.2s;
+}
+
+.stackgl-readme ::-webkit-scrollbar-thumb:active {
+  background: #A9B0C2;
+}
