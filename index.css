@@ -19,6 +19,10 @@
   background: #DEE7FF;
 }
 
+.stackgl-readme > :first-child {
+  margin-top: 0;
+}
+
 /**
  * Headers
  */
@@ -51,7 +55,7 @@
 }
 
 .stackgl-readme h3 {
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 2em;
   color: #4A4F5E;
 }
@@ -76,6 +80,15 @@
   padding: 0;
 }
 
+.stackgl-readme h1 a,
+.stackgl-readme h2 a,
+.stackgl-readme h3 a,
+.stackgl-readme h4 a,
+.stackgl-readme h5 a,
+.stackgl-readme h6 a {
+  background: transparent;
+}
+
 .stackgl-readme h1 img,
 .stackgl-readme h2 img,
 .stackgl-readme h3 img,
@@ -92,7 +105,7 @@
 .stackgl-readme > ul,
 .stackgl-readme > ol {
   font-size: 0.9rem;
-  line-height: 1.55em;
+  line-height: 1.6em;
 }
 
 /**
@@ -163,17 +176,34 @@
  */
 .stackgl-readme li {
   margin-bottom: 0.2em;
+  position: relative;
+}
+.stackgl-readme li > :first-child {
+  margin-top: 0;
+}
+
+.stackgl-readme ul {
+  list-style-type: none;
+}
+
+.stackgl-readme ul > li:before {
+  content: '*';
+  color: #A9B0C2;
+  position: absolute;
+  left: -1rem;
 }
 
 .stackgl-readme ul,
 .stackgl-readme ol {
   margin: 1rem;
-  padding-left: 2rem;
+  padding-left: 0;
 }
+
 .stackgl-readme ul ul,
 .stackgl-readme ul ol,
 .stackgl-readme ol ol,
 .stackgl-readme ol ul {
+  padding-left: 1rem;
   margin: 0;
 }
 /**
@@ -205,6 +235,7 @@
 .stackgl-readme .k,
 .stackgl-readme .kd,
 .stackgl-readme .kr,
+.stackgl-readme .s2,
 .stackgl-readme .s1 { color: #FFE169; }
 .stackgl-readme .mf,
 .stackgl-readme .mi { color: #66C4FF; }
@@ -213,6 +244,34 @@
 .stackgl-readme .c1 { color: #A9B0C2; }
 .stackgl-readme .o,
 .stackgl-readme .p { color: #DEE7FF; }
+
+.stackgl-readme .line .source .storage,
+.stackgl-readme .line .source .pipe.shell,
+.stackgl-readme .line .source .keyword,
+.stackgl-readme .line .source .string { color: #FFE169; }
+.stackgl-readme .line .source .operator,
+.stackgl-readme .line .source .delimiter,
+.stackgl-readme .line .source .brace { color: #DEE7FF; }
+.stackgl-readme .line .source .support.function,
+.stackgl-readme .line .source .boolean,
+.stackgl-readme .line .source .numeric { color: #66C4FF; }
+.stackgl-readme .line .source .comment { color: #A9B0C2; }
+
+.stackgl-readme .line {
+  white-space: pre;
+}
+
+.stackgl-readme .line .source.glsl .preprocessor .define,
+.stackgl-readme .line .source.glsl .preprocessor.keyword,
+.stackgl-readme .line .source.glsl .preprocessor { color: #A9B0C2; }
+.stackgl-readme .line .source.glsl .storage,
+.stackgl-readme .line .source.glsl .any-method,
+.stackgl-readme .line .source.glsl .dot-access,
+.stackgl-readme .line .source.glsl .keyword,
+.stackgl-readme .line .source.glsl .preprocessor.entity,
+.stackgl-readme .line .source.glsl .support.function,
+.stackgl-readme .line .source.glsl .variable-access { color: #61FF90; }
+.stackgl-readme .line .source.glsl .numeric { color: #FF6F5C; }
 
 .stackgl-readme .lang-glsl .k,
 .stackgl-readme .lang-glsl .kd,
